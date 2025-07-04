@@ -8,6 +8,6 @@ public class Main {
         board.printFiguresOfBoard();
 
 
-        System.out.println(" available moves: " + board.getBoard()[3][6].getFigure().getAvailableMoves(board).toString());
+        System.out.println(" available moves: " + board.getBoard()[7][4].getFigure().getAvailableMoves(board).toString());
     }
 }

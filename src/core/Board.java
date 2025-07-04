@@ -102,10 +102,12 @@ public class Board {
     public void printFiguresOfBoard() {
         for (int row = 0; row < size; row++) {
             for (int col = 0; col < size; col++) {
-                if (board[row][col].getFigure() != null && board[row][col].getFigure().getClass() == Pawn.class) {
+                if (board[row][col].getFigure() != null && board[row][col].getFigure().getClass() == King.class) {
                     System.out.print("0 ");
-                } else {
+                }else if (board[row][col].getFigure() != null && board[row][col].getFigure().getClass() == Pawn.class) {
                     System.out.print("1 ");
+                } else {
+                    System.out.print("2 ");
                 }
             }
             System.out.println(" ");
