@@ -19,4 +19,6 @@ public abstract class Figure {
 
     public abstract  List<Move> getAvailableMoves(Board board);
 
+
+
 }

@@ -20,6 +20,11 @@ public class Move {
         this.capturedFigure = capturedFigure;
     }
 
+    @Override
+    public String toString(){
+
+        return new String("figure: " + figure.getClass() + "; new row:" + this.toRow + "; new col:" + this.toCol + ";\n");
+    }
 
 
 }

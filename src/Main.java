@@ -1,5 +1,7 @@
 import core.Board;
 
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -8,6 +10,6 @@ public class Main {
         board.printFiguresOfBoard();
 
 
-        System.out.println(" available moves: " + board.getBoard()[7][4].getFigure().getAvailableMoves(board).toString());
+        System.out.println(" available moves: " + board.getTile(0,0).getFigure().getAvailableMoves(board).toString());
     }
 }
