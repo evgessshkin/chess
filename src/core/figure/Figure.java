@@ -1,5 +1,10 @@
 package core.figure;
 
+import core.Board;
+import core.Move;
+
+import java.util.List;
+
 public abstract class Figure {
 
     protected int row;
@@ -12,5 +17,6 @@ public abstract class Figure {
         this.color = color;
     }
 
+    public abstract  List<Move> getAvailableMoves(Board board);
 
 }

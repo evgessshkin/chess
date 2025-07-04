@@ -6,5 +6,8 @@ public class Main {
         Board board = new Board();
 //        board.printColorOfTiles();
         board.printFiguresOfBoard();
+
+
+        System.out.println(" available moves: " + board.getBoard()[3][6].getFigure().getAvailableMoves(board).toString());
     }
 }
