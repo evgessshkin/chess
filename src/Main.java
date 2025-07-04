@@ -10,6 +10,6 @@ public class Main {
         board.printFiguresOfBoard();
 
 
-        System.out.println(" available moves: " + board.getTile(0,2).getFigure().getAvailableMoves(board).toString());
+        System.out.println(" available moves: " + board.getTile(0,1).getFigure().getAvailableMoves(board).toString());
     }
 }
