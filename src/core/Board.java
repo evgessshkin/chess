@@ -33,8 +33,8 @@ public class Board {
             for (int col = 0; col < size; col++) {
 
                 if (row == 1) {
-                    Pawn pawn = new Pawn(row, col, FigureColor.BLACK);
-                    board[row][col].setFigure(pawn);
+//                    Pawn pawn = new Pawn(row, col, FigureColor.BLACK);
+//                    board[row][col].setFigure(pawn);
                 } else if (row == 6) {
                     Pawn pawn = new Pawn(row, col, FigureColor.WHITE);
                     board[row][col].setFigure(pawn);
@@ -102,7 +102,7 @@ public class Board {
     public void printFiguresOfBoard() {
         for (int row = 0; row < size; row++) {
             for (int col = 0; col < size; col++) {
-                if (board[row][col].getFigure() != null && board[row][col].getFigure().getClass() == Rook.class) {
+                if (board[row][col].getFigure() != null && board[row][col].getFigure().getClass() == Queen.class) {
                     System.out.print("0 ");
                 }else if (board[row][col].getFigure() != null && board[row][col].getFigure().getClass() == Pawn.class) {
                     System.out.print("1 ");
