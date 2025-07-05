@@ -1,6 +1,6 @@
 package core;
 
-public enum TileColor {
+public enum Color {
     WHITE,
     BLACK
 }

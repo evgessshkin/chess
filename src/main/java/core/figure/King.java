@@ -1,6 +1,7 @@
 package core.figure;
 
-import core.Board;
+import core.Color;
+import core.board.Board;
 import core.Move;
 
 import java.util.ArrayList;
@@ -11,7 +12,7 @@ public class King extends Figure {
     private static final int[] dCol = {1, 1, 1, 0, 0, -1, -1, -1};
     private static final int[] dRow = {-1, 0, 1, -1, 1, -1, 0, 1};
 
-    public King(int row, int col, FigureColor color) {
+    public King(int row, int col, Color color) {
         super(row, col, color);
     }
 

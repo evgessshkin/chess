@@ -1,6 +1,7 @@
 package core.figure;
 
-import core.Board;
+import core.Color;
+import core.board.Board;
 import core.Move;
 import java.util.ArrayList;
 import java.util.List;
@@ -12,7 +13,7 @@ public class Pawn extends Figure {
 
     private boolean isFirstMove = true;
 
-    public Pawn(int row, int col, FigureColor color) {
+    public Pawn(int row, int col, Color color) {
         super(row, col, color);
     }
 
@@ -20,7 +21,7 @@ public class Pawn extends Figure {
     public List<Move> getAvailableMoves(Board board) {
         List<Move> availableMoves = new ArrayList<>();
 
-        int direction = (this.color == FigureColor.WHITE) ? -1 : 1;
+        int direction = (this.color == Color.WHITE) ? -1 : 1;
 
         int startRow = this.row;
         int startCol = this.col;

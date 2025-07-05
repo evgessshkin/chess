@@ -1,13 +1,14 @@
 package core.figure;
 
-import core.Board;
+import core.Color;
+import core.board.Board;
 import core.Move;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Knight extends Figure{
-    public Knight(int row, int col, FigureColor color) {
+    public Knight(int row, int col, Color color) {
         super(row, col, color);
     }
 
