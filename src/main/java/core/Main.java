@@ -1,5 +1,4 @@
-import core.Game;
-import core.board.Board;
+package core;
 
 
 public class Main {
